@@ -5,9 +5,14 @@ import { storage, SETTINGS_KEY } from '../services/storage';
 
 // Language name mapping for common locales
 const MODELS = [
-    { code: 'anthropic/claude-3-opus', name: 'Claude 3 Opus' },
+    { code: 'anthropic/claude-sonnet-4', name: 'Claude Sonnet 4' },
+    { code: 'anthropic/claude-opus-4', name: 'Claude Opus 4' },
     { code: 'anthropic/claude-3.7-sonnet', name: 'Claude 3.7 Sonnet' },
     { code: 'anthropic/claude-3.5-sonnet', name: 'Claude 3.5 Sonnet' },
+    { code: 'anthropic/claude-3-opus', name: 'Claude 3 Opus' },
+    { code: 'google/gemini-2.5-pro', name: 'Gemini 2.5 Pro' },
+    { code: 'google/gemini-2.5-flash-lite-preview-06-17', name: 'Gemini 2.5 Flash Lite' },
+    { code: 'x-ai/grok-3', name: 'Grok 3' },
     { code: 'inception/mercury-coder-small-beta', name: 'Mercury Coder Small' },
     { code: 'deepseek/deepseek-r1', name: 'DeepSeek R1' }
 ];
