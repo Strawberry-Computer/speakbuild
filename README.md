@@ -1,4 +1,4 @@
-# Voice-Driven React Native Component Generator
+# SpeakBuild
 
 An AI-powered voice assistant that generates and modifies React Native components through natural language commands. Built with Expo and OpenRouter API (Claude).
 
@@ -25,8 +25,8 @@ An AI-powered voice assistant that generates and modifies React Native component
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/voice-assistant.git
-cd voice-assistant
+git clone https://github.com/Strawberry-Computer/speakbuild.git
+cd speakbuild
 ```
 
 2. Install dependencies:
@@ -160,7 +160,7 @@ Arrays:
 - Handles component validation and error handling
 - Provides abort capability for in-progress generations
 
-`componentUtils.js`:
+`componentUtils.js` (in `/src/utils/`):
 - Provides utilities for creating and rendering components
 - Handles component sandboxing and error boundaries
 - Manages React and React Native dependencies injection
@@ -181,19 +181,19 @@ Arrays:
 ## Platform-Specific Configuration
 
 ### iOS
-- Bundle Identifier: `com.voiceassistant.app`
+- Bundle Identifier: `ai.speakbuild`
 - Required Permissions:
   - Microphone Usage
   - Speech Recognition
   - Background Audio Mode
 
 ### Android
-- Package: `com.voiceassistant.app`
+- Package: `ai.speakbuild`
 - Required Permissions:
   - RECORD_AUDIO
   - INTERNET
 - Build Configuration:
-  - Kotlin Version: 1.8.10
+  - Kotlin Version: 1.9.24
   - Compile SDK: 35
   - Target SDK: 34
   - Build Tools: 34.0.0
@@ -248,10 +248,13 @@ Reports are saved in the `evaluations/` directory with filenames:
 ## Dependencies
 
 Key packages:
-- `expo` ~52.0.0
-- `@expo/vector-icons` ^14.0.0
+- `expo` ~52.0.36
+- `@expo/vector-icons` ^14.0.4
+- `@react-navigation/drawer` ^7.1.1
 - `expo-av` ~15.0.2
+- `expo-build-properties` ~0.13.2
 - `expo-clipboard` ~7.0.1
+- `expo-constants` ~17.0.0
 - `expo-file-system` ~18.0.7
 - `expo-haptics` ~14.0.1
 - `expo-image-picker` ~16.0.4
@@ -259,15 +262,24 @@ Key packages:
 - `expo-location` ~18.0.5
 - `expo-media-library` ~17.0.5
 - `expo-notifications` ~0.29.12
+- `expo-router` ~4.0.16
 - `expo-sensors` ~14.0.2
 - `expo-sharing` ~13.0.1
+- `expo-splash-screen` ~0.29.0
+- `expo-status-bar` ~2.0.0
+- `expo-system-ui` ~4.0.0
 - `react` 18.3.1
+- `react-dom` 18.3.1
 - `react-native` 0.76.6
-- `@react-native-async-storage/async-storage` 1.23.1
-- `react-native-gesture-handler` ~2.20.2
-- `react-native-reanimated` ~3.16.1
 - `react-native-audio-record` ^0.2.2
-- `@expo/vector-icons` ^14.0.4
+- `react-native-gesture-handler` ~2.20.2
+- `react-native-mmkv` ^3.2.0
+- `react-native-permissions` ^5.2.5
+- `react-native-reanimated` ~3.16.1
+- `react-native-safe-area-context` 4.12.0
+- `react-native-screens` ~4.4.0
+- `react-native-svg` ^15.11.1
+- `react-native-web` ~0.19.6
 - `partial-json` ^0.1.7
 
 For full list of dependencies, see `package.json`.
